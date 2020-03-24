@@ -11,13 +11,12 @@ For using Selenium(ChromeDriver) with Crystal lang
 
 ## Config
 
-### ARGS
+### ARG
 
 - CRYSTAL_VER (Default: 0.32.1)
-- CRYSTAL_CACHE_DIR (Default: /home/seluser/.crystal)
 
 ### ENV
-- CRYSTAL_CACHE_DIR (Default: /home/seluser/.crystal)
+- CRYSTAL_CACHE_DIR (Default: $HOME/.cashe/crystal)
 
 ## Base Image
 
