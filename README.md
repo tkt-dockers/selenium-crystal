@@ -16,8 +16,23 @@ For using Selenium(ChromeDriver) with Crystal lang
 - CRYSTAL_VER (Default: 0.32.1)
 
 ### ENV
+
 - CRYSTAL_CACHE_DIR (Default: $HOME/.cashe/crystal)
 
 ## Base Image
 
 - selenium/standalone-chrome
+
+## Sample
+
+```Dockerfile
+FROM tktcorporation/selenium-crystal:latest
+
+WORKDIR /srv/crawler
+
+COPY ./ ./
+RUN sudo chown -R seluser:seluser /srv/crawler
+
+RUN shards
+
+```
